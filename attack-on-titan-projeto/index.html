@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Última temporada SNK</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="content">
+        <div class="img-container">
+          <img
+            src="img/snk-poster.jpg"
+            class="poster"
+            alt="Poster da última temporada de Shingeki no Kyojin"
+          />
+
+          <span
+            ><input
+              onclick="document.getElementById('trailer-modal').showModal()"
+              type="button"
+              class="btn"
+              value="Trailer"
+          /></span>
+        </div>
+
+        <div class="dados">
+          <h1>Shingeki no Kyojin (2013)</h1>
+          <div class="idade">16</div>
+          <span class="topicos"
+            >Animação, Sci-Fi & Fantasy, Drama, War & Politics, Mistério, Action
+            & Adventure</span
+          >
+          <span class="duracao-episodio">25 min</span>
+
+          <h2>Sinopse</h2>
+          <p>
+            Titãs estão quase exterminando a raça humana. Porém alguns estão
+            dispostos a formar um exército de ataque aos seres assassinos. O
+            jovem Eren, após ver sua mãe ser devorada por um titã, decide que
+            não deixará nenhum deles vivo e buscará sua vingança completa.
+          </p>
+
+          <div class="container-flex">
+            <div>
+              <h3>Autores:</h3>
+              <ul class="autores">
+                <li>Hajime Isayama</li>
+                <li>Yasuko Kobayashi</li>
+                <li>Tetsuro Araki</li>
+                <li>Masashi Koizuka</li>
+              </ul>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Personagens principais</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Eren Jaeger</td>
+                </tr>
+                <tr>
+                  <td>Mikana Ackerman</td>
+                </tr>
+                <tr>
+                  <td>Armin Arlet</td>
+                </tr>
+                <tr>
+                  <td>Levi Ackerman</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <dialog id="trailer-modal">
+        <header>
+          <h1 style="margin: 0; float: left">Trailer</h1>
+          <button
+            class="btn"
+            style="float: right"
+            onclick="document.getElementById('trailer-modal').close()"
+          >
+            Fechar
+          </button>
+          <div style="clear: both"></div>
+        </header>
+        <div style="margin-top: 10px">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-wPC3AZYJsA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </dialog>
+    </section>
+  </body>
+</html>
